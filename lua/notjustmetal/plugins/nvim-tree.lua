@@ -12,14 +12,17 @@ return {
           restrict_above_cwd = true,
         },
       },
+      
       renderer = {
         root_folder_label = function(root_path)
           -- Extract the last part of the path
           local folder_name = root_path:match("^.+/(.+)$")
           return folder_name or root_path
         end,
+
         icons = {
           git_placement = "after",
+          
           glyphs = {
             git = {
               unstaged = "●",
@@ -31,6 +34,7 @@ return {
               ignored = "◌"
             },
           },
+
           show = {
             folder_arrow = false
           }
