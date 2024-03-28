@@ -13,3 +13,8 @@ opt.splitright = true
 
 opt.guicursor = ""
 opt.scrolloff = 10
+
+opt.fillchars = { eob = " " }
+
+opt.clipboard = "unnamedplus"
+

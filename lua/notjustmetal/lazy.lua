@@ -11,9 +11,5 @@ if not vim.loop.fs_stat(lazypath) then
 end
 vim.opt.rtp:prepend(lazypath)
 
-require("lazy").setup(
-  {{ import = "notjustmetal.plugins" }},
-  { install = {
-    colorscheme = {"nightfly"}
-  }}
-)
+require("lazy").setup("notjustmetal.plugins")
+
