@@ -11,5 +11,9 @@ if not vim.loop.fs_stat(lazypath) then
 end
 vim.opt.rtp:prepend(lazypath)
 
-require("lazy").setup("notjustmetal.plugins")
-
+require("lazy").setup(
+  {
+    { import = "notjustmetal.plugins" },
+    { import = "notjustmetal.plugins.lsp" }
+  }
+)

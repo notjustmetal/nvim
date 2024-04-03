@@ -5,14 +5,14 @@ return {
     -- disable netrw
     vim.g.loaded_netrw = 1
     vim.g.loaded_netrwPlugin = 1
-    
+
     require("nvim-tree").setup({
       actions = {
         change_dir = {
           restrict_above_cwd = true,
         },
       },
-      
+
       renderer = {
         root_folder_label = function(root_path)
           -- Extract the last part of the path
@@ -22,7 +22,7 @@ return {
 
         icons = {
           git_placement = "after",
-          
+
           glyphs = {
             git = {
               unstaged = "●",
