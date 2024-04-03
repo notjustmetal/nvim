@@ -3,6 +3,7 @@ return {
 
   dependencies = {
     "williamboman/mason-lspconfig.nvim",
+    "neovim/nvim-lspconfig"
   },
 
   config = function()
@@ -11,8 +12,17 @@ return {
 
     mason.setup({})
     mason_lspconfig.setup({
-      ensure_installed = { "lua_ls" },
-      automatic_installation = true
+      ensure_installed = {
+        "bashls",
+        "cssls",
+        "dockerls",
+        "eslint",
+        "jsonls",
+        "tsserver",
+        "lua_ls"
+      },
+
+      automatic_installation = true,
     })
   end
 }

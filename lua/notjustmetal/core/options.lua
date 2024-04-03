@@ -18,4 +18,4 @@ opt.scrolloff = 10
 opt.fillchars = { eob = " " }
 
 opt.clipboard = "unnamedplus"
-
+opt.signcolumn = "yes"
